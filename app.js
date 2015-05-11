@@ -1,0 +1,3 @@
+Ext.application({
+  name: 'Zunk'
+});
