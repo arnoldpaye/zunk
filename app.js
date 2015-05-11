@@ -1,3 +1,6 @@
 Ext.application({
-  name: 'Zunk'
+  name: 'Zunk',
+
+  launch: function() {
+  }
 });
