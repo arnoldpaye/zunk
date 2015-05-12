@@ -12,10 +12,33 @@ Ext.define('Zunk.view.Viewport', {
         height: 80,
         items: [
           {
+            // Buscador de estaciones
             xtype: 'nuevaestacion'
           }
         ]
-      }]
+      }],
+      layout: {
+        type: 'hbox',
+        align: 'stretch'
+      },
+      items: [
+        {
+          // Panel izquierdo
+          width: 250,
+          layout: {
+            type: 'vbox',
+            align: 'stretch'
+          },
+          items: [
+            {
+              // Lista de estaciones
+              flex: 1,
+              html: 'Lista de estaciones',
+              height: 250
+            }
+          ]
+        }
+      ]
     };
     this.callParent();
   }
