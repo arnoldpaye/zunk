@@ -1,7 +1,10 @@
 Ext.define('Zunk.view.Viewport', {
   extend: 'Ext.container.Viewport',
 
-  requires: 'Zunk.view.NuevaEstacion',
+  requires: [
+    'Zunk.view.NuevaEstacion',
+    'Zunk.view.ListaDeEstaciones'
+  ],
 
   initComponent: function() {
     console.log(this);
@@ -24,7 +27,7 @@ Ext.define('Zunk.view.Viewport', {
       items: [
         {
           // Panel izquierdo
-          width: 250,
+          width: 300,
           layout: {
             type: 'vbox',
             align: 'stretch'
@@ -32,8 +35,7 @@ Ext.define('Zunk.view.Viewport', {
           items: [
             {
               // Lista de estaciones
-              flex: 1,
-              html: 'Lista de estaciones',
+              xtype: 'listadeestaciones',
               height: 250
             }
           ]
