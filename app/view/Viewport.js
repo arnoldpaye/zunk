@@ -7,7 +7,6 @@ Ext.define('Zunk.view.Viewport', {
   ],
 
   initComponent: function() {
-    console.log(this);
     this.items = {
       dockedItems: [{
         dock: 'top',
