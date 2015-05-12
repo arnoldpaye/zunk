@@ -35,7 +35,13 @@ Ext.define('Zunk.view.Viewport', {
             {
               // Lista de estaciones
               xtype: 'listadeestaciones',
-              height: 250
+              flex: 1
+            },
+            {
+              // PUblicidad
+              html: 'Publicidad',
+              height: 400,
+              flex: 1
             }
           ]
         }
