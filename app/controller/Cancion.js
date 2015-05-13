@@ -18,6 +18,6 @@ Ext.define('Zunk.controller.Cancion', {
   },
 
   cambioDeEstacion: function(registro) {
-    this.getInformacionDeCancion().update();
+    this.getInformacionDeCancion().update(registro.data);
   }
 });
