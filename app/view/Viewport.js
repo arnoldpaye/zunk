@@ -38,7 +38,7 @@ Ext.define('Zunk.view.Viewport', {
               flex: 1
             },
             {
-              // PUblicidad
+              // Publicidad
               html: 'Publicidad',
               height: 400,
               flex: 1
