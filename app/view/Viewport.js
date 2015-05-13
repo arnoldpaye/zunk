@@ -4,7 +4,8 @@ Ext.define('Zunk.view.Viewport', {
   requires: [
     'Zunk.view.NuevaEstacion',
     'Zunk.view.ListaDeEstaciones',
-    'Zunk.view.InformacionDeCancion'
+    'Zunk.view.InformacionDeCancion',
+    'Zunk.view.CancionesReproducidas'
   ],
 
   initComponent: function() {
@@ -56,7 +57,7 @@ Ext.define('Zunk.view.Viewport', {
           items: [
             {
               // Ultimas canciones reproducidas
-              html: 'panel 1',
+              xtype: 'cancionesreproducidas',
               height: 250
             },
             {
