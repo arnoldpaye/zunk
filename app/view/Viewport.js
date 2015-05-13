@@ -60,7 +60,7 @@ Ext.define('Zunk.view.Viewport', {
             },
             {
               // Informacion de cancion
-              html: 'panel 2',
+              xtype: 'informaciondecancion'
               flex: 1
             }
           ]
