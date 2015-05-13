@@ -40,7 +40,27 @@ Ext.define('Zunk.view.Viewport', {
             {
               // Publicidad
               html: 'Publicidad',
-              height: 400,
+              height: 250,
+              flex: 1
+            }
+          ]
+        },
+        {
+          xtype: 'container',
+          flex: 1,
+          layout: {
+            type: 'vbox',
+            align:'stretch'
+          },
+          items: [
+            {
+              // Ultimas canciones reproducidas
+              html: 'panel 1',
+              height: 250
+            },
+            {
+              // Informacion de cancion
+              html: 'panel 2',
               flex: 1
             }
           ]
