@@ -13,6 +13,6 @@ Ext.define('Zunk.controller.Estacion', {
 
   // Manejar evento 'select' del view 'listadeestaciones'
   seleccionarEstacion: function(esto, registro, indice, opcionesEvento) {
-      console.log(registro.data);
+    this.application.fireEvent('cambiodeestacion', registro);
   }
 });
