@@ -3,7 +3,8 @@ Ext.define('Zunk.view.Viewport', {
 
   requires: [
     'Zunk.view.NuevaEstacion',
-    'Zunk.view.ListaDeEstaciones'
+    'Zunk.view.ListaDeEstaciones',
+    'Zunk.view.InformacionDeCancion'
   ],
 
   initComponent: function() {
@@ -60,7 +61,7 @@ Ext.define('Zunk.view.Viewport', {
             },
             {
               // Informacion de cancion
-              xtype: 'informaciondecancion'
+              xtype: 'informaciondecancion',
               flex: 1
             }
           ]
