@@ -1,15 +1,23 @@
 Ext.define('Zunk.controller.Cancion', {
   extend: 'Ext.app.Controller',
 
+  refs: [
+    {
+      ref: 'informacionDeCancion',
+      selector: 'informaciondecancion'
+    }
+  ],
+
   init: function() {
 
     // Manejar eventos de aplicacion
     this.application.on({
-      cambiodeestacion: this.cambioDeEstacion
+      cambiodeestacion: this.cambioDeEstacion,
+      scope: this
     });
   },
 
   cambioDeEstacion: function(registro) {
-    console.log(registro.data);
+    this.getInformacionDeCancion().update();
   }
 });
