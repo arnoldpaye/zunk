@@ -18,6 +18,28 @@ Ext.define('Zunk.view.Viewport', {
           {
             // Buscador de estaciones
             xtype: 'nuevaestacion'
+          },
+          {
+            xtype: 'container',
+            flex: 1,
+            layout: {
+              type: 'hbox',
+              align: 'stretch'
+            },
+            items: [
+              {
+                html: 'panel 1',
+                flex: 1
+              },
+              {
+                html: 'panel 2',
+                flex: 1
+              },
+              {
+                html: 'panel 3',
+                flex: 1
+              }
+            ]
           }
         ]
       }],
@@ -62,8 +84,17 @@ Ext.define('Zunk.view.Viewport', {
             },
             {
               // Informacion de cancion
-              xtype: 'informaciondecancion',
-              flex: 1
+              xtype: 'tabpanel',
+              flex: 1,
+              items: [
+                {
+                  xtype: 'informaciondecancion',
+                  title: 'Informacion de cancion'
+                },
+                {
+                  title: 'Descripcion'
+                }
+              ]
             }
           ]
         }
