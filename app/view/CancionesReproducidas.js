@@ -14,5 +14,5 @@ Ext.define('Zunk.view.CancionesReproducidas', {
       { id: 1, nombre: 'Cancion 3.1', estacion: 3 },
     ]
   },
-  itemTpl: '<h1>{nombre}</h1>'
+  itemTpl: '<h1>{nombre}</h1>{estacion}'
 });
